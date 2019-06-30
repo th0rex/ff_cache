@@ -186,7 +186,7 @@ fn main() -> io::Result<()> {
         records.push(record);
     }
 
-    records.sort_unstable_by_key(|x| x.frecency);
+    records.sort_unstable_by_key(|x| !x.frecency);
     profile_path.push("entries");
 
     while cache_size > target_size {
