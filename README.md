@@ -13,7 +13,7 @@ Make sure `~/.cargo/bin` is in your path.
 `ff_cache /home/user/.cache/mozilla/firefox/profile_name target_cache_size_in_kb`
 
 # Why would I need this?
-I used this in systemd script that moves my firefox cache and profile to a
+I use this in systemd script that moves my firefox cache and profile to a
 zram device, so firefox doesn't use the disk.
 To ensure that my ram usage doesn't explode I prune the firefox cache to 300mb
 on every shutdown in the same systemd script.
