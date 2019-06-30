@@ -18,5 +18,7 @@ zram device, so firefox doesn't use the disk.
 To ensure that my ram usage doesn't explode I prune the firefox cache to 300mb
 on every shutdown in the same systemd script.
 
+My scripts and systemd service for that can be found [here](https://github.com/th0rex/dotfiles/blob/master/systemd/zram.service), (here)[https://github.com/th0rex/dotfiles/blob/master/bin/ff_cache) and [here](https://github.com/th0rex/dotfiles/blob/master/bin/ff_uncache).
+
 # Credits
-The datastructures for the cache are taken from the [https://searchfox.org/mozilla-central/source/netwerk/cache2/CacheIndex.h](firefox source).
+The datastructures for the cache are taken from the [firefox source](https://searchfox.org/mozilla-central/source/netwerk/cache2/CacheIndex.h).
